@@ -5,7 +5,7 @@
     "title": "TaskFlow - Gestionnaire de tâches",
     "shortDescription": "Application de gestion de tâches avec système de priorités",
     "longDescription": "TaskFlow est une application web moderne qui permet de gérer efficacement ses tâches quotidiennes. Elle offre un système de priorités avec code couleur, des notifications de deadline, et la possibilité de créer des catégories personnalisables. L'interface intuitive permet de glisser-déposer les tâches pour les réorganiser rapidement.",
-    "image": "/images/projets/Taskflow.png",
+    "image": "https://placehold.co/800x500/png",
     "tags": ["Next.js", "React", "CSS Modules"],
     "github": "https://github.com/votre-username/taskflow",
     "demo": "https://taskflow-demo.vercel.app",
