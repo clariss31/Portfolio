@@ -1,28 +1,8 @@
 import Link from "next/link";
 import styles from "./page.module.css";
+import formationsData from "@/data/formations.json";
 
 export default function Formations() {
-  const formations = [
-    {
-      slug: "integrateur-web",
-      title: "Intégrateur Web",
-      description: "Formation en Intégration Web",
-      tags: ["Bac +2", "9 mois"],
-    },
-    {
-      slug: "testeur-logiciel",
-      title: "Testeur Logiciel",
-      description: "Formation en Test Logiciel",
-      tags: ["Bac +2", "9 mois"],
-    },
-    {
-      slug: "developpeur-low-code",
-      title: "Développeur Low-Code",
-      description: "Formation en Développement Low-Code",
-      tags: ["Bac +2", "6 mois"],
-    },
-  ];
-
   return (
     <div className={styles.container}>
       <h1 className={styles.title}>Mes Formations</h1>
@@ -31,7 +11,7 @@ export default function Formations() {
       </p>
 
       <div className={styles.grid}>
-        {formations.map((formation) => (
+        {formationsData.map((formation) => (
           <Link
             href={`/formation/${formation.slug}`}
             key={formation.slug}
