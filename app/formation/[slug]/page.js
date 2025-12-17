@@ -1,5 +1,6 @@
 import styles from "./page.module.css";
 import formationsData from "@/data/formations.json";
+import Image from "next/image";
 
 export default async function FormationDetail({ params }) {
   const { slug } = await params;
@@ -24,10 +25,13 @@ export default async function FormationDetail({ params }) {
 
       <div className={styles.content}>
         <div className={styles.imageWrapper}>
-          <img
+          <Image
             className={styles.image}
             src={formation.image}
             alt={formation.title}
+            width={800}
+            height={600}
+            preload
           />
         </div>
 

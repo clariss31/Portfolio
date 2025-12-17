@@ -1,6 +1,7 @@
 import Link from "next/link";
 import styles from "./page.module.css";
 import formationsData from "@/data/formations.json";
+import Image from "next/image";
 
 export default function Formations() {
   return (
@@ -17,6 +18,16 @@ export default function Formations() {
             key={formation.slug}
             className={styles.card}
           >
+            <div className={styles.imageWrapper}>
+              <Image
+                src={formation.image}
+                alt={formation.title}
+                className={styles.image}
+                width={300}
+                height={200}
+                preload
+              />
+            </div>
             <h2>{formation.title}</h2>
             <p>{formation.description}</p>
             <div className={styles.tags}>
