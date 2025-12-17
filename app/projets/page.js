@@ -2,6 +2,7 @@ import Link from "next/link";
 import styles from "./page.module.css";
 import projectsData from "@/data/projects.json";
 import Tag from "@/components/Tag/Tag";
+import Image from "next/image";
 
 export default function Projects() {
   return (
@@ -19,10 +20,13 @@ export default function Projects() {
             className={styles.card}
           >
             <div className={styles.imageWrapper}>
-              <img
+              <Image
                 src={project.image}
                 alt={project.title}
                 className={styles.image}
+                width={300}
+                height={200}
+                preload
               />
             </div>
             <div className={styles.content}>

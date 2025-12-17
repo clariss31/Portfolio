@@ -1,6 +1,7 @@
 import styles from "./page.module.css";
 import projectsData from "@/data/projects.json";
 import { notFound } from "next/navigation";
+import Image from "next/image";
 
 export default async function ProjectDetail({ params }) {
   const { slug } = await params;
@@ -21,10 +22,13 @@ export default async function ProjectDetail({ params }) {
 
       <div className={styles.content}>
         <div className={styles.imageWrapper}>
-          <img
+          <Image
             className={styles.image}
             src={project.image}
             alt={project.title}
+            width={800}
+            height={600}
+            preload
           />
         </div>
 
