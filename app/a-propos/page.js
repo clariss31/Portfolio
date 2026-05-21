@@ -12,6 +12,7 @@ export default function About() {
             Développeur web passionné avec 3 ans d&apos;expérience dans la
             création d&apos;applications modernes et performantes. Spécialisé
             dans l&apos;écosystème React et Next.js.
+            INCROYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABLE.
           </p>
           <p>
             J&apos;aime transformer des idées en produits concrets qui résolvent
