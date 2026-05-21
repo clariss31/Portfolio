@@ -1,4 +1,5 @@
 import { Inter, Poppins } from "next/font/google";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 import "./globals.css";
 import Navigation from "@/components/Navigation/Navigation";
